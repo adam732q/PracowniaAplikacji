@@ -42,4 +42,12 @@ void main() {
     System.out.print("Podaj trzecie słowo: ");
     String slowo3 =sc3.next();
     System.out.println(slowo3+", "+slowo2+", "+slowo3);
+
+    //7
+    Scanner sc4 = new Scanner(System.in);
+
+    System.out.print("Podaj słowo: ");
+    String slowo =sc4.next();
+    int dlugosc = slowo.length();
+    System.out.println("Twoje słowo składa się z: "+dlugosc+" liter");
 }
