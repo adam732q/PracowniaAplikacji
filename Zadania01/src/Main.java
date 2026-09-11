@@ -19,4 +19,16 @@ void main() {
     double stopnie =sc.nextDouble();
     double farenheit = 1.8 * stopnie + 32.0;
     System.out.println("Temperatura w farenheit: " + farenheit);
+
+    //5
+    Scanner sc2 = new Scanner(System.in);
+
+    System.out.print("Podaj pierwszy bok trójkąta: ");
+    int pierwszy =sc.nextInt();
+    System.out.print("Podaj drugi bok trójkąta: ");
+    int drugi =sc.nextInt();
+    System.out.print("Podaj trzeci bok trójkąta: ");
+    int trzeci =sc.nextInt();
+    int obwod = pierwszy + drugi + trzeci;
+    System.out.println("Obwód trujkąta wynosi: " + obwod);
 }
