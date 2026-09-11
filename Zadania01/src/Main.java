@@ -56,4 +56,12 @@ void main() {
     double y = 2;
     double wynik = x / y;
     System.out.println(wynik);
+
+    //9
+    Scanner sc5 = new Scanner(System.in);
+
+    System.out.print("Podaj słowo: ");
+    String tslowo =sc5.next();
+    String dlitery = tslowo.toUpperCase();
+    System.out.println("Twoje słowo wielkimi literami: " + dlitery);
 }
