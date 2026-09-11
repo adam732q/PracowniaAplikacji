@@ -64,4 +64,12 @@ void main() {
     String tslowo =sc5.next();
     String dlitery = tslowo.toUpperCase();
     System.out.println("Twoje słowo wielkimi literami: " + dlitery);
+
+    //10
+    Scanner sc6 = new Scanner(System.in);
+
+    System.out.print("Podaj promień koła: ");
+    int r =sc6.nextInt();
+    double pole = Math.PI * r * r;
+    System.out.println("Pole koła wynosi: " + pole);
 }
