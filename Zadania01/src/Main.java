@@ -23,12 +23,23 @@ void main() {
     //5
     Scanner sc2 = new Scanner(System.in);
 
-    System.out.print("Podaj pierwszy bok trójkąta: ");
-    int pierwszy =sc.nextInt();
-    System.out.print("Podaj drugi bok trójkąta: ");
-    int drugi =sc.nextInt();
-    System.out.print("Podaj trzeci bok trójkąta: ");
-    int trzeci =sc.nextInt();
+    System.out.print("Podaj długość pierwszego boku trójkąta: ");
+    int pierwszy =sc2.nextInt();
+    System.out.print("Podaj długość drugiego boku trójkąta: ");
+    int drugi =sc2.nextInt();
+    System.out.print("Podaj długość trzeciego boku trójkąta: ");
+    int trzeci =sc2.nextInt();
     int obwod = pierwszy + drugi + trzeci;
-    System.out.println("Obwód trujkąta wynosi: " + obwod);
+    System.out.println("Obwód trójkąta wynosi: " + obwod);
+
+    //6
+    Scanner sc3 = new Scanner(System.in);
+
+    System.out.print("Podaj pierwsze słowo: ");
+    String slowo1 =sc3.next();
+    System.out.print("Podaj drugie słowo: ");
+    String slowo2 =sc3.next();
+    System.out.print("Podaj trzecie słowo: ");
+    String slowo3 =sc3.next();
+    System.out.println(slowo3+", "+slowo2+", "+slowo3);
 }
