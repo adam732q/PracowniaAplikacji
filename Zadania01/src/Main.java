@@ -50,4 +50,10 @@ void main() {
     String slowo =sc4.next();
     int dlugosc = slowo.length();
     System.out.println("Twoje słowo składa się z: "+dlugosc+" liter");
+
+    //8
+    double x = 5;
+    double y = 2;
+    double wynik = x / y;
+    System.out.println(wynik);
 }
