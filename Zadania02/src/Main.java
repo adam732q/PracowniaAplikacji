@@ -64,4 +64,27 @@ void main() {
     }
 
     System.out.println("Najwieksza liczba to " + najwieksza);
+
+    //5
+    Scanner sc5 = new Scanner(System.in);
+
+    System.out.print("Podaj numer miesiaca: ");
+    int miesiac = sc5.nextInt();
+
+    String nazwa = switch(miesiac){
+        case 1 -> "Styczen";
+        case 2 -> "Luty";
+        case 3 -> "Marzec";
+        case 4 -> "Kwiecien";
+        case 5 -> "Maj";
+        case 6 -> "Czerwiec";
+        case 7 -> "Lipiec";
+        case 8 -> "Sierpien";
+        case 9 -> "Wrzesien";
+        case 10 -> "Pazdziernik";
+        case 11 -> "Listopad";
+        case 12 -> "Grudzien";
+        default -> "Nieprawidlowy numer miesiaca";
+    };
+    System.out.println(nazwa);
 }
