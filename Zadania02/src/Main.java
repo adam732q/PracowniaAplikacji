@@ -26,4 +26,19 @@ void main() {
     }else{
         System.out.println("Z twoich liczb niemożna zbudować trójkąta");
     }
+
+    //3
+    Scanner sc3 = new Scanner(System.in);
+
+    System.out.print("Podaj liczbe: ");
+    int a = sc3.nextInt();
+
+    System.out.print("Podaj liczbe: ");
+    int b = sc3.nextInt();
+
+    if(a>b){
+        System.out.println("Większe jest: "+a);
+    }else if(b>a){
+        System.out.println("Większe jest: "+b);
+    }
 }
