@@ -87,4 +87,17 @@ void main() {
         default -> "Nieprawidlowy numer miesiaca";
     };
     System.out.println(nazwa);
+
+    //6
+    Scanner sc6 = new Scanner(System.in);
+
+    System.out.print("Podaj inie: ");
+    String imie = sc6.next();
+
+    String mojeImie = "Adam";
+    if(imie.equals(mojeImie)){
+        System.out.println("Masz takie samo imie jak ja");
+    }else{
+        System.out.println("Masz inne imie niż ja");
+    }
 }
