@@ -41,4 +41,27 @@ void main() {
     }else if(b>a){
         System.out.println("Większe jest: "+b);
     }
+
+    //4
+    Scanner sc4 = new Scanner(System.in);
+
+    System.out.print("Podaj liczbe: ");
+    int a2 = sc4.nextInt();
+
+    System.out.print("Podaj liczbe: ");
+    int b2 = sc4.nextInt();
+
+    System.out.print("Podaj liczbe: ");
+    int c2 = sc4.nextInt();
+
+    int najwieksza = a2;
+
+    if(b2>najwieksza){
+        najwieksza = b2;
+    }
+    if(c2>najwieksza){
+        najwieksza = c2;
+    }
+
+    System.out.println("Najwieksza liczba to " + najwieksza);
 }
