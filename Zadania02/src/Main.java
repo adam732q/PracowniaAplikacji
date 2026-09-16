@@ -110,4 +110,16 @@ void main() {
     boolean pelnolotni = wiek>=18 ? true : false;
 
     System.out.println("Pełnoletni: " + pelnolotni);
+
+    //8
+    Scanner sc8 = new Scanner(System.in);
+
+    System.out.print("Podaj rok: ");
+    int rok = sc8.nextInt();
+
+    if((rok%4==0 && rok%100!=0) || rok%400==0){
+        System.out.println("Rok przestępny");
+    }else{
+        System.out.println("Rok nieprzestępny");
+    }
 }
