@@ -21,7 +21,7 @@ void main() {
     System.out.print("Podaj 3 bok trójkąta: ");
     int bok3 = sc2.nextInt();
 
-    if(bok1 + bok2 > bok3 && bok1 + bok3 > bok2 && bok2 + bok3 > bok1){
+    if(bok1 + bok2 >= bok3 && bok1 + bok3 >= bok2 && bok2 + bok3 >= bok1){
         System.out.println("Z twoich liczb można zbudować trójkąt");
     }else{
         System.out.println("Z twoich liczb niemożna zbudować trójkąta");
@@ -91,7 +91,7 @@ void main() {
     //6
     Scanner sc6 = new Scanner(System.in);
 
-    System.out.print("Podaj inie: ");
+    System.out.print("Podaj imie: ");
     String imie = sc6.next();
 
     String mojeImie = "Adam";
@@ -100,4 +100,14 @@ void main() {
     }else{
         System.out.println("Masz inne imie niż ja");
     }
+
+    //7
+    Scanner sc7 = new Scanner(System.in);
+
+    System.out.print("Podaj swój wiek: ");
+    int wiek = sc7.nextInt();
+
+    boolean pelnolotni = wiek>=18 ? true : false;
+
+    System.out.println("Pełnoletni: " + pelnolotni);
 }
