@@ -122,4 +122,94 @@ void main() {
     }else{
         System.out.println("Rok nieprzestępny");
     }
+
+    //9
+    Scanner sc9 = new Scanner(System.in);
+
+    System.out.print("Podaj swoją wagę: ");
+    double waga = sc9.nextDouble();
+
+    System.out.print("Podaj swój wzrost w metrach: ");
+    double wzrost = sc9.nextDouble();
+
+    double bmi = waga / (wzrost * wzrost);
+
+    System.out.println("BMI: " + bmi);
+
+    if(bmi < 18.5){
+        System.out.println("Niedowaga");
+    }else if(bmi <= 24.9){
+        System.out.println("Waga prawidłowa");
+    }else{
+        System.out.println("Nadwaga");
+    }
+
+    //10
+    Scanner sc10 = new Scanner(System.in);
+
+    double cena;
+    int raty;
+
+    do {
+        System.out.print("Podaj cenę towaru (100-10000 zł): ");
+        cena = sc10.nextDouble();
+    } while(cena < 100 || cena > 10000);
+
+    do {
+        System.out.print("Podaj liczbę rat (6-48): ");
+        raty = sc10.nextInt();
+    } while(raty < 6 || raty > 48);
+
+    double oprocentowanie;
+
+    if(raty <= 12){
+        oprocentowanie = 0.025;
+    }else if(raty <= 24){
+        oprocentowanie = 0.05;
+    }else{
+        oprocentowanie = 0.10;
+    }
+
+    double rata = (cena + cena * oprocentowanie) / raty;
+
+    System.out.println("Miesięczna rata: " + rata + " zł");
+
+    //11
+    Scanner sc11 = new Scanner(System.in);
+
+    System.out.println("Prosty kalkulator");
+
+    System.out.print("Podaj pierwszą liczbę: ");
+    double a = sc11.nextDouble();
+
+    System.out.print("Podaj działanie (+, -, *, /): ");
+    char dzialanie = sc11.next().charAt(0);
+
+    System.out.print("Podaj drugą liczbę: ");
+    double b = sc11.nextDouble();
+
+    switch(dzialanie){
+        case '+':
+            System.out.println("Wynik: " + (a + b));
+            break;
+
+        case '-':
+            System.out.println("Wynik: " + (a - b));
+            break;
+
+        case '*':
+            System.out.println("Wynik: " + (a * b));
+            break;
+
+        case '/':
+            if(b == 0){
+                System.out.println("Nie można dzielić przez zero");
+            }else{
+                System.out.println("Wynik: " + (a / b));
+            }
+            break;
+
+        default:
+            System.out.println("Błędny symbol działania");
+    }
 }
