@@ -1,3 +1,5 @@
+import java.util.Random;
+
 void main() {
 
     Scanner sc = new Scanner(System.in);
@@ -79,4 +81,63 @@ void main() {
     System.out.println("Najwieksza liczba = " + najwieksza2);
     System.out.println("Suma najmniejszej i najwiekszej = " + suma4);
     System.out.println("Srednia arytmetyczna = " + srednia);
+
+    //5
+    Random random = new Random();
+
+    int wylosowana = random.nextInt(100) + 1;
+    int liczba5;
+
+    System.out.print("Zgadnij liczbe: ");
+    liczba5 = sc.nextInt();
+
+    while(liczba5 != wylosowana){
+
+        if(liczba5 > wylosowana){
+            System.out.println("Podales za duza wartosc");
+        }
+
+        if(liczba5 < wylosowana){
+            System.out.println("Podales za mala wartosc");
+        }
+
+        System.out.print("Podaj liczbe: ");
+        liczba5 = sc.nextInt();
+    }
+
+    System.out.println("Gratulacje");
+
+    //6
+    System.out.print("Podaj znak: ");
+    char znak = sc.next().charAt(0);
+
+    System.out.print("Podaj x: ");
+    int x = sc.nextInt();
+
+    System.out.print("Podaj y: ");
+    int y = sc.nextInt();
+
+    System.out.print("Podaj a: ");
+    int a = sc.nextInt();
+
+    System.out.print("Podaj b: ");
+    int b = sc.nextInt();
+
+    for(int i = 1; i < y; i++){
+        System.out.println();
+    }
+
+    for(int i = 0; i < b; i++){
+
+        for(int j = 1; j < x; j++){
+            System.out.print(" ");
+        }
+
+        for(int j = 0; j < a; j++){
+            System.out.print(znak);
+        }
+
+        System.out.println();
+    }
+
 }
