@@ -140,4 +140,68 @@ void main() {
         System.out.println();
     }
 
+    //7
+    System.out.print("Podaj wysokosc choinki: ");
+    int n7 = sc.nextInt();
+
+    for(int i = 1; i <= n7; i++){
+        for(int j = 1; j <= n7 - i; j++){
+            System.out.print(" ");
+        }
+        for(int j = 1; j <= 2 * i - 1; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+
+    //8
+    System.out.print("Podaj liczbe: ");
+    int n8 = sc.nextInt();
+
+    int silnia = 1;
+
+    for(int i = 1; i <= n8; i++){
+        silnia = silnia * i;
+    }
+
+    System.out.println("Silnia = " + silnia);
+
+    //9
+    System.out.print("Podaj slowo: ");
+    String slowo = sc.next();
+
+    boolean palindrom = true;
+
+    for(int i = 0; i < slowo.length() / 2; i++){
+
+        if(slowo.charAt(i) != slowo.charAt(slowo.length() - 1 - i)){
+            palindrom = false;
+            break;
+        }
+    }
+
+    if(palindrom){
+        System.out.println("Slowo jest palindromem");
+    }
+    else{
+        System.out.println("Slowo nie jest palindromem");
+    }
+
+    //10
+    petlaGlowna:
+    for(int i = 1; i <= 10; i++){
+
+        if(i % 2 != 0){
+            continue;
+        }
+
+        for(int j = 1; j <= 10; j++){
+
+            System.out.println(j);
+
+            if(j > i){
+                continue petlaGlowna;
+            }
+        }
+    }
 }
