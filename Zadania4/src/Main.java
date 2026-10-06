@@ -14,4 +14,16 @@ void main() {
     for (int i = 0; i < tab2.length; i += 2) {
         System.out.println(tab2[i]);
     }
+
+    //Zadanie 2
+    int[] tab = {3,5,71,9,22,1,26,45};
+
+    int najwieksza = tab[0];
+
+    for(int i = 1; i < tab.length; i++){
+        if(tab[i] > najwieksza){
+            najwieksza = tab[i];
+        }
+    }
+    System.out.println("Najwiekszy element tablicy to: "+ najwieksza);
 }
