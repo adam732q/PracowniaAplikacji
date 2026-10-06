@@ -34,4 +34,26 @@ void main() {
     for(String slowo : tab3){
         System.out.println(slowo.toUpperCase());
     }
+
+
+    //Zadanie 4
+    Scanner scanner = new Scanner(System.in);
+
+    String[] slowa2 = new String[5];
+
+    for(int i = 0; i < slowa2.length; i++){
+        System.out.print("Podaj slowo: ");
+        slowa2[i] = scanner.nextLine();
+    }
+
+    System.out.println("Slowa od konca:");
+
+    for(int i = slowa2.length - 1; i >= 0; i--){
+
+        for(int j = slowa2[i].length() - 1; j >= 0; j--){
+            System.out.print(slowa2[i].charAt(j));
+        }
+
+        System.out.println();
+    }
 }
