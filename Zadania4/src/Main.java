@@ -26,4 +26,12 @@ void main() {
         }
     }
     System.out.println("Najwiekszy element tablicy to: "+ najwieksza);
+
+
+    //Zadanie 3
+    String[] tab3 = {"ala","ma","kota"};
+
+    for(String slowo : tab3){
+        System.out.println(slowo.toUpperCase());
+    }
 }
