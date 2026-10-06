@@ -37,13 +37,13 @@ void main() {
 
 
     //Zadanie 4
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     String[] slowa2 = new String[5];
 
     for(int i = 0; i < slowa2.length; i++){
         System.out.print("Podaj slowo: ");
-        slowa2[i] = scanner.nextLine();
+        slowa2[i] = sc.nextLine();
     }
 
     System.out.println("Slowa od konca:");
@@ -56,4 +56,31 @@ void main() {
 
         System.out.println();
     }
+
+    //Zadanie 5
+    int[] liczby = new int[8];
+
+    for(int i = 0; i < liczby.length; i++){
+        System.out.print("Podaj liczbe: ");
+        liczby[i] = sc.nextInt();
+    }
+
+    for(int i = 0; i < liczby.length - 1; i++){
+
+        for(int j = 0; j < liczby.length - 1 - i; j++){
+
+            if(liczby[j] > liczby[j + 1]){
+
+                int temp = liczby[j];
+                liczby[j] = liczby[j + 1];
+                liczby[j + 1] = temp;
+            }
+        }
+    }
+    System.out.println("Posortowana tablica:");
+
+    for(int i = 0; i < liczby.length; i++){
+        System.out.print(liczby[i] + " ");
+    }
+    System.out.println();
 }
