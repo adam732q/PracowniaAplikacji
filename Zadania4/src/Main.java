@@ -125,4 +125,67 @@ void main() {
     else{
         System.out.println("Tablice nie sa takie same.");
     }
+
+    // Zadanie 8
+    int[] liczby8 = new int[10];
+
+    int suma = 0;
+
+    for(int i = 0; i < liczby8.length; i++){
+        liczby8[i] = (int)(Math.random() * 21) - 10;
+        suma = suma + liczby8[i];
+    }
+
+    System.out.println("Zawartosc tablicy:");
+
+    for(int i = 0; i < liczby8.length; i++){
+        System.out.print(liczby8[i] + " ");
+    }
+
+    System.out.println();
+
+    int min = liczby8[0];
+    int max = liczby8[0];
+
+    for(int i = 0; i < liczby8.length; i++){
+
+        if(liczby8[i] < min){
+            min = liczby8[i];
+        }
+
+        if(liczby8[i] > max){
+            max = liczby8[i];
+        }
+    }
+
+    double srednia = (double)suma / liczby8.length;
+
+    int mniejsze = 0;
+    int wieksze = 0;
+
+    for(int i = 0; i < liczby8.length; i++){
+
+        if(liczby8[i] < srednia){
+            mniejsze++;
+        }
+
+        if(liczby8[i] > srednia){
+            wieksze++;
+        }
+    }
+
+    System.out.println("Najmniejszy element: " + min);
+    System.out.println("Najwiekszy element: " + max);
+    System.out.println("Srednia: " + srednia);
+    System.out.println("Elementy mniejsze od sredniej: " + mniejsze);
+    System.out.println("Elementy wieksze od sredniej: " + wieksze);
+
+    System.out.println("Tablica od konca:");
+
+    for(int i = liczby8.length - 1; i >= 0; i--){
+        System.out.print(liczby8[i] + " ");
+    }
+
+    System.out.println();
+
 }
