@@ -188,4 +188,31 @@ void main() {
 
     System.out.println();
 
+
+    // Zadanie 9
+    int[] liczby9 = new int[20];
+
+    for(int i = 0; i < liczby9.length; i++){
+        liczby9[i] = (int)(Math.random() * 10) + 1;
+    }
+
+    System.out.println("Zawartosc tablicy:");
+
+    for(int i = 0; i < liczby9.length; i++){
+        System.out.print(liczby9[i] + " ");
+    }
+
+    System.out.println();
+
+    int[] ileRazy = new int[10];
+
+    for(int i = 0; i < liczby9.length; i++){
+        ileRazy[liczby9[i] - 1]++;
+    }
+
+    System.out.println("Liczba powtorzen:");
+
+    for(int i = 0; i < ileRazy.length; i++){
+        System.out.println((i + 1) + " wystepuje " + ileRazy[i] + " razy");
+    }
 }
