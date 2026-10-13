@@ -83,4 +83,14 @@ void main() {
         System.out.print(liczby[i] + " ");
     }
     System.out.println();
+
+    // Zadanie 6
+    Scanner sc6 = new Scanner(System.in);
+
+    int[] liczby6 = new int[5];
+
+    for(int i = 0; i < liczby6.length; i++){
+        System.out.print("Podaj liczbe: ");
+        liczby6[i] = sc6.nextInt();
+    }
 }
