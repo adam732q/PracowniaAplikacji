@@ -93,4 +93,36 @@ void main() {
         System.out.print("Podaj liczbe: ");
         liczby6[i] = sc6.nextInt();
     }
+
+    for(int i = 0; i < liczby6.length; i++){
+
+        int silnia = 1;
+
+        for(int j = 1; j <= liczby6[i]; j++){
+            silnia = silnia * j;
+        }
+
+        System.out.println("Silnia z " + liczby6[i] + " = " + silnia);
+    }
+
+
+// Zadanie 7
+    String[] tab7a = {"ala", "ma", "kota"};
+    String[] tab7b = {"ala", "ma", "kota"};
+
+    boolean takieSame = true;
+
+    for(int i = 0; i < tab7a.length; i++){
+
+        if(!tab7a[i].equals(tab7b[i])){
+            takieSame = false;
+        }
+    }
+
+    if(takieSame){
+        System.out.println("Tablice sa takie same.");
+    }
+    else{
+        System.out.println("Tablice nie sa takie same.");
+    }
 }
